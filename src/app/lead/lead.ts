@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { Theme } from '../service/theme';
 
 @Component({
   selector: 'app-lead',
@@ -7,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './lead.scss',
 })
 export class Lead {
+     isDark:boolean = false;
+     intro:string="Hey there! I'm Raeshal Khurana <br> A Full Stack Web Developer"
+    private themeService=inject(Theme)
+    constructor()
+    {
+     this.themeService.isDark$.subscribe((res=>
+     {
+      this.isDark=res;
+     }
+     ))
+    }
+
 
 }

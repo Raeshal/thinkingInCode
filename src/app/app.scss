@@ -1,17 +1,17 @@
 .theme
 {
-    background-color: white;
+    background-color: #6c757d2e;
     color: black;
        min-height: 100vh;
 
-    transition: background-color 0.9s ease, color 0.9s ease;
+    //transition: background-color 0.3s ease, color 0.3s ease;
 }
 .theme.dark
 {
-    background-color: black;
+    background-color: #050303;
     color: white;
 }
 .content
 {
-    min-height: 90vh;
+    min-height: 70vh;
 }
