@@ -1,0 +1,9 @@
+<div class="theme" [class.dark]="isDarkTheme">
+<app-header [isDark]="isDarkTheme" (themeToggle)="toggleTheme()"></app-header>
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>
+</div>
