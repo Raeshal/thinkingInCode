@@ -1,8 +1,15 @@
-<section class="d-flex justify-content-center">
-    <div class="">
-       <h1 class="z-1" ></h1>
-    </div>
+<section class="d-flex gap-5">
     <div>
         <img class="opacity-75"  [src]="isDark ? '/abc3.png' : '/abc3.png'" >        
+    </div>
+     <div class="d-inline align-content-center">
+       <div [className]="isDark? ' text-white':' text-black ' ">
+        <h1 class="z-1 font" >Hey, I'm Raeshal Khurana</h1>
+       <p>Full Stack Developer</p>
+       </div>
+       <div class="d-flex gap-5">
+        <button  [className]="isDark? 'p-3 btn text-black bg-white':'p-3 btn text-white bg-black' ">Download Resume</button>
+        <button  [className]="isDark? 'p-3 btn text-white bg-transparent border-dark-subtle':'p-3 btn bg-transparent  border-dark-subtle' ">Connect</button>
+       </div>
     </div>
 </section>
