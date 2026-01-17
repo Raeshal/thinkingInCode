@@ -53,5 +53,15 @@
     gap: 20px;
     text-align: center;
   }
+  
 
 }
+.act
+{
+padding: 1rem;
+border-radius: 10px;
+}
+.act.active
+  {
+    background: rgb(33, 32, 32);
+  }

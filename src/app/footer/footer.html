@@ -9,13 +9,14 @@
     </div>
 
     <!-- Middle -->
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <a href="/resume.pdf" target="_blank">Resume</a>
+    <div class="footer-links p-2">
+      <a routerLink='/' class="act" (click)="setActive('home')" [class.active]="activeLink === 'home'">Home</a>
+      <a routerLink='/about' class="act" (click)="setActive('about')" [class.active]="activeLink === 'about'">About</a>
+      <a href="#skills" class="act" (click)="setActive('skills')" [class.active]="activeLink === 'skills'">Skills</a>
+      <a href="#projects" class="act" (click)="setActive('projects')" [class.active]="activeLink === 'projects'">Projects</a>
+      <a href="#experience" class="act" (click)="setActive('experience')" [class.active]="activeLink === 'experience'">Experience</a>
+      <a href="#contact" class="act"(click)="setActive('contact')"[class.active]="activeLink === 'contact'">Contact</a>
+      <a href="/resume.pdf"class="act" target="_blank" [class.active]="activeLink === 'resume'">Resume</a>
     </div>
 
   </div>

@@ -20,5 +20,10 @@ export class Lead {
      ))
     }
 
+    downloadDoc()
+    {
+       window.open('/Raeshal-Khurana-FSD-Resume.pdf', '_blank');
+    }
+
 
 }
