@@ -11,7 +11,14 @@
     background-color: #050303;
     color: white;
 }
-.content
-{
-    min-height: 73.5vh;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 96.5vh;
+}
+
+.content {
+  max-height: 73.5vh;
+  flex: 1;
 }
