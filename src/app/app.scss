@@ -18,7 +18,21 @@
   min-height: 96.5vh;
 }
 
+// .content {
+//   max-height: 73.5vh;
+//   flex: 1;
+// }
+.page-layout {
+     height: 96.6vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .content {
-  max-height: 73.5vh;
   flex: 1;
+  overflow-y: auto;
+}
+
+app-footer {
+  flex-shrink: 0;
 }
