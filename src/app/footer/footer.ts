@@ -4,12 +4,12 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterLink, CommonModule],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
 export class Footer {
- activeLink:String='Home'
+ activeLink:String='home'
 
  setActive(link:String)
  {

@@ -9,7 +9,7 @@
        </div>
        <div class="d-flex gap-5">
         <button  [className]="isDark? 'p-3 btn text-black bg-white':'p-3 btn text-white bg-black'" (click)="downloadDoc()">Download Resume</button>
-        <button  [className]="isDark? 'p-3 btn text-white bg-transparent border-dark-subtle':'p-3 btn bg-transparent  border-dark-subtle' ">Connect</button>
+        <button  [className]="isDark? 'p-3 btn text-white bg-transparent border-dark-subtle':'p-3 btn bg-transparent  border-dark-subtle' "  (click)="navigateTo()"  >Connect</button>
        </div>
     </div>
 </section>
