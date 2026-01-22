@@ -2,11 +2,13 @@
     <div class="m-5 w-50">
     <h1>Get in Touch</h1>
     <p>Feel free to reach out to me. Let's connect and create something amazing together!</p>
-    <form class="d-grid gap-2 w-75">
-        <input placeholder="Your Name">
-        <input placeholder="Your Email">
-        <input placeholder="Subject" type="text">
-        <button class="btn btn-dark w-25">Send Message</button>
+    <form [formGroup]="userForm" class="d-grid gap-2 w-75"  (ngSubmit)="submit()">
+        <input placeholder="Your Name" formControlName="name">
+        <input placeholder="Your Email" formControlName="email">
+        <input placeholder="Subject" type="text" formControlName="subject">
+        <button class="btn btn-dark w-25" type="submit" [disabled]="userForm.invalid">
+    Send Message
+  </button>
     </form>
 </div>
 
