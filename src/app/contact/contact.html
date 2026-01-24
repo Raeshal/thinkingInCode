@@ -1,18 +1,26 @@
-<div class="d-flex">
-    <div class="m-5 w-50">
+<div class="d-flex ">
+    <div class="m-5 ">
     <h1>Get in Touch</h1>
     <p>Feel free to reach out to me. Let's connect and create something amazing together!</p>
-    <form [formGroup]="userForm" class="d-grid gap-2 w-75"  (ngSubmit)="submit()">
-        <input placeholder="Your Name" formControlName="name">
-        <input placeholder="Your Email" formControlName="email">
-        <input placeholder="Subject" type="text" formControlName="subject">
-        <button class="btn btn-dark w-25" type="submit" [disabled]="userForm.invalid">
+    <form [formGroup]="userForm" class="d-grid gap-2 "  (ngSubmit)="submit()" action="mailto:raeshalkhurana07@gmail.com" method="post" enctype="text/plain">
+        <input placeholder="Your Name" formControlName="name" required>
+        <input placeholder="Your Email" formControlName="email" required>
+        <textarea placeholder="Subject" type="text" formControlName="subject"></textarea>
+        <button class="btn btn-dark w-25" type="submit" >
     Send Message
   </button>
     </form>
 </div>
 
-<div>
-    <img class="opacity-75"  [src]="isDark ? '/abc3.png' : '/abc3.png'" >        
+<div class="d-flex flex-row ">
+    <div class="d-flex flex-column mt-5">
+        <span class="mt-5"><i class="bi bi-mailbox me-2 "></i>raeshalkhurana07@gmail.com</span>
+        <span><i class="bi bi-pin me-2"></i>Bangalore</span>
+        <span><i class="bi bi-linkedin me-2"></i>raeshal-khurana-39bb06163</span>
+        <span></span>
+    </div>
+    <div>
+      <img class="opacity-75"  [src]="isDark ? '/abc3.png' : '/abc3.png'" >        
+    </div>
 </div>
 </div>

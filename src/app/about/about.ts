@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.scss',
 })
 export class About {
+  experience:String="5.5+";
+
 
 }
